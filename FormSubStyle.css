@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+header{
+    background-image: url("https://i1.wp.com/www.orphicpixel.com/wp-content/uploads/2011/03/minimalist-wallpaper-02.jpg?fit=550%2C344&ssl=1");
+    background-position: center;
+    background-size: 20%;
+    display: flexbox;
+    text-align: center;
+    width: 100%;
+    padding: 0.3rem;
+}
+header i{
+    position: absolute;
+    color: black;
+    top: 1.5rem;
+    left: 0.5rem;
+    font-size: 2.5rem;
+}
+header h1{
+    font-size: 70px;
+}
+nav{
+    background-color: burlywood;
+    display: block;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: flex;
+    padding: 0.3rem;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin: 11.1rem 0;
+    text-align: center;
+    align-items: center;
+}
+.opciones{
+    text-align: center;
+    padding: 1rem;
+}
+footer{
+    background-color: gray;
+    color: black;
+    width: 100%;
+    text-align: center;
+}

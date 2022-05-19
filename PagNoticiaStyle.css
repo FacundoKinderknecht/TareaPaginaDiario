@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url("https://i1.wp.com/www.orphicpixel.com/wp-content/uploads/2011/03/minimalist-wallpaper-02.jpg?fit=550%2C344&ssl=1");
+    background-position: center;
+    background-size: 20%;
+    display: flexbox;
+    text-align: center;
+    width: 100%;
+    padding: 0.3rem;
+}
+header i{
+    position: absolute;
+    color: black;
+    top: 1.5rem;
+    left: 0.5rem;
+    font-size: 2.5rem;
+}
+header h1{
+    font-size: 70px;
+}
+nav{
+    display: none;
+}
+main{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.publicidad{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.2rem;
+    flex-basis: 40%;
+}
+.publicidad img{
+    max-width: 30%;
+}
+.noticias{
+    flex-basis: 60%;
+    margin: auto;
+}
+.noticia{
+    max-width: 100%;
+    padding: 1rem;
+    border-bottom: 2px black solid;  
+}
+.noticia img{
+    width: 80%;
+    padding: 0.5rem;
+}
+.subnoticias{
+    display: none;
+}
+footer{
+    background-color: gray;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+    .fa-bars{
+        display: none !important;
+    }
+    nav{
+        background-color: burlywood;
+        display: block;
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+        display: flex;
+        padding: 0.3rem;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+    }
+    .noticia{
+        flex-basis: 70%;
+    }
+    .publicidad{
+        display: flex;
+        flex-basis: 30%;
+        align-content: space-between;    
+        flex-direction: column;  
+        align-items: center;
+    }
+    .publicidad img{
+        min-width: 100%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .noticias{
+        flex-basis: 60%;
+    }
+    .publicidad{
+        flex-basis: 20%;
+    }
+    .subnoticias{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .subnoticia{
+        border: 2px black solid;
+    }
+}
+
